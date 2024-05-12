@@ -1,18 +1,29 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: content-box repeating-radial-gradient(slategray, black);
-  padding: 2px;
+html body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 header {
   border-style: solid;
   border-color: aqua;
   text-wrap: pretty;
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.flex-container > div.flex1 {
+  padding: 5px;
+  margin: 5px;
+}
+
+body {
+  background: content-box repeating-radial-gradient(slategray, black);
 }
 
 .main-header {
@@ -35,13 +46,6 @@ header {
   text-decoration-thickness: 2px;
 }
 
-main {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 1px;
-  text-align: center;
-}
-
 h3 {
   color: rgb(0, 255, 255);
 }
@@ -51,27 +55,28 @@ h4 {
   width: 100px;
   border-right: dotted;
   margin-left: 2px;
-  padding: 2px;
+  padding: 10px;
 }
 
 .main-content {
   position: absolute;
   top: 140px;
-  left: 120px;
-  padding: 25px;
+  left: 110px;
+  padding-left: 25px;
   text-wrap: nowrap;
+  margin-top: 30px;
 }
 
 .main-content > p {
   font-size: 16px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(169, 91, 241);
-  line-height: 0.7em;
 }
 
 .main-content > img {
   width: 250px;
-  height: 150px;
+  height: 140px;
+  padding: 0px;
 }
 
 footer {
@@ -80,6 +85,7 @@ footer {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  margin-top: 100px;
 }
 
 ul {
