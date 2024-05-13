@@ -1,14 +1,12 @@
-html body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
+* {
+  box-sizing: border-box;
+  text-align: center;
 }
 
 header {
   border-style: solid;
   border-color: aqua;
   text-wrap: pretty;
-  padding: 20px;
 }
 
 .flex-container {
@@ -18,8 +16,16 @@ header {
 }
 
 .flex-container > div.flex1 {
-  padding: 5px;
-  margin: 5px;
+  text-wrap: nowrap;
+}
+.flex-container > div.flex2 a {
+  position: relative;
+  top: 100px;
+  right: 20px;
+  color: yellowgreen;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-wrap: nowrap;
 }
 
 body {
@@ -47,24 +53,24 @@ body {
 }
 
 h3 {
-  color: rgb(0, 255, 255);
+  color: yellowgreen;
+  width: 100px;
+  border-right: dotted;
 }
 
 h4 {
-  color: rgb(154, 205, 50);
-  width: 100px;
-  border-right: dotted;
-  margin-left: 2px;
-  padding: 10px;
+  color: rgb(0, 255, 255);
+}
+
+main {
+  padding: 5px;
+  overflow: hidden;
 }
 
 .main-content {
-  position: absolute;
-  top: 140px;
-  left: 110px;
-  padding-left: 25px;
-  text-wrap: nowrap;
-  margin-top: 30px;
+  position: relative;
+  top: -330px;
+  left: 10px;
 }
 
 .main-content > p {
@@ -76,7 +82,6 @@ h4 {
 .main-content > img {
   width: 250px;
   height: 140px;
-  padding: 0px;
 }
 
 footer {
@@ -85,7 +90,6 @@ footer {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin-top: 100px;
 }
 
 ul {
